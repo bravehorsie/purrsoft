@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrsoft – Software Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#hero" class="nav-logo">
+                <svg width="22" height="26" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="catGradNav" x1="30%" y1="0%" x2="70%" y2="100%">
+                            <stop offset="0%" stop-color="#7c3aed"/>
+                            <stop offset="100%" stop-color="#06b6d4"/>
+                        </linearGradient>
+                    </defs>
+                    <!--
+                        Primary read: a teardrop / shield badge — familiar geometric form.
+                        Secondary read (on inspection): the top has two gentle apex peaks
+                        separated by a shallow valley — those are cat ears. The valley
+                        sits ~12% below the peaks relative to the shape's full height,
+                        subtle enough to read as a designer's stylistic choice on the curve.
+                    -->
+                    <path d="M12,27 C5,23 1,18 1,13 C1,8 4,5 8,2 Q12,8 16,2 C20,5 23,8 23,13 C23,18 19,23 12,27 Z"
+                          fill="url(#catGradNav)"/>
+                </svg>
+                <span>Purrsoft</span>
+            </a>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/cs/index.html" class="lang-toggle">CZ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <!-- Hero watermark: the same logomark at monumental scale.
+             Primary read: large geometric gem/shield in the background.
+             Secondary read: the ear double-peak at the top, now unmistakable at this size. -->
+        <div class="hero-cat" aria-hidden="true">
+            <svg width="340" height="397" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="catGradHero" x1="30%" y1="0%" x2="70%" y2="100%">
+                        <stop offset="0%" stop-color="#7c3aed"/>
+                        <stop offset="100%" stop-color="#06b6d4"/>
+                    </linearGradient>
+                    <filter id="heroGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="0.6" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                <!-- Filled body: very dim, just a presence -->
+                <path d="M12,27 C5,23 1,18 1,13 C1,8 4,5 8,2 Q12,8 16,2 C20,5 23,8 23,13 C23,18 19,23 12,27 Z"
+                      fill="url(#catGradHero)" opacity="0.10"/>
+                <!-- Outer stroke: the readable outline at this scale -->
+                <path d="M12,27 C5,23 1,18 1,13 C1,8 4,5 8,2 Q12,8 16,2 C20,5 23,8 23,13 C23,18 19,23 12,27 Z"
+                      fill="none" stroke="url(#catGradHero)" stroke-width="0.35" opacity="0.45" filter="url(#heroGlow)"/>
+                <!-- Inner inset ring: adds depth, echoes a gemstone facet -->
+                <path d="M12,24 C7,21 3.5,17 3.5,13 C3.5,9 6,6.5 9.2,4.5 Q12,9 14.8,4.5 C18,6.5 20.5,9 20.5,13 C20.5,17 17,21 12,24 Z"
+                      fill="none" stroke="url(#catGradHero)" stroke-width="0.2" opacity="0.25"/>
+            </svg>
+        </div>
+        <div class="hero-content animate-on-scroll">
+            <h1>Innovative Software<br><span class="gradient-text">Tailored for You</span></h1>
+            <p>We craft precise, scalable solutions that grow with your business — from custom development to cloud architecture and beyond.</p>
+            <div class="hero-ctas">
+                <a href="#services" class="btn-primary">Explore Services</a>
+                <a href="#contact" class="btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <div class="content">
+            <div class="section-heading animate-on-scroll">
+                <h2>Our Services</h2>
+                <p>End-to-end software expertise across the full development lifecycle.</p>
+            </div>
+            <div class="service-grid">
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                    <p>Every business has unique needs. We develop software that precisely matches your requirements, delivering robust, tailored solutions across a broad spectrum of technologies.</p>
+                </div>
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>
+                        </svg>
+                    </div>
+                    <h3>Consulting &amp; Advisory</h3>
+                    <p>We optimize your existing solutions, designing processes that simplify workflow and enhance performance — guiding you from analysis and design through production deployment.</p>
+                </div>
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Fully leverage the cloud's flexibility and scalability. Start small and scale as needed, with immediate insights into application performance through cloud-native tooling.</p>
+                </div>
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m17 8 4 4-4 4M3 12h18M7 8 3 12l4 4"/>
+                        </svg>
+                    </div>
+                    <h3>Migration</h3>
+                    <p>Modernize critical legacy systems without risk. We analyze your current solution and deliver a phased migration plan that ensures business continuity every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers -->
+    <section id="customers" class="section">
+        <div class="content">
+            <div class="section-heading animate-on-scroll">
+                <h2>Trusted by Teams At</h2>
+                <p>We've had the privilege of working with organizations across industries.</p>
+            </div>
+            <div class="customers-row animate-on-scroll">
+                <span class="customer-badge">AirBank</span>
+                <span class="customer-badge">Oracle</span>
+                <span class="customer-badge">Monster</span>
+                <span class="customer-badge">DHL</span>
+                <span class="customer-badge">Barclays</span>
+                <span class="customer-badge">Novartis</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="content">
+            <div class="section-heading animate-on-scroll">
+                <h2>About Us</h2>
+                <p>Our values drive everything we build.</p>
+            </div>
+            <div class="about-grid">
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Quality &amp; Care</h3>
+                    <p>Our commitment to the highest quality is reflected in everything we do. We meticulously craft source code, ensure reliability through automated testing, and pay close attention to every detail from design to implementation.</p>
+                </div>
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="14" x="2" y="7" rx="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3>Professional Approach</h3>
+                    <p>With many years of industry experience, we bring expertise and responsibility to every project. Our solutions are not only efficient and functional, but also secure and intuitive to use.</p>
+                </div>
+                <div class="glass-card animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                        </svg>
+                    </div>
+                    <h3>Your Satisfaction</h3>
+                    <p>We prioritize transparency and your satisfaction above all else. We listen closely, maintain regular communication, and adapt to your requirements — delivering results you'll be fully satisfied with.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="content">
+            <div class="section-heading animate-on-scroll">
+                <h2>Contact</h2>
+                <p>Ready to start something great together?</p>
+            </div>
+            <div class="contact-card animate-on-scroll">
+                <div class="contact-info">
+                    <h3>Roman Grigoriadi</h3>
+                    <p>Roman is a seasoned software engineer with extensive experience in analysis and development. He has worked across banking, insurance, pharmaceuticals, and transportation — contributing to open-source JakartaEE projects and specializing in Java backend systems and cybersecurity.</p>
+                    <div class="contact-links">
+                        <a href="tel:+420773002048" class="contact-pill">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.81-1.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +420 773 002 048
+                        </a>
+                        <a href="mailto:roman.grigoriadi@gmail.com" class="contact-pill">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            roman.grigoriadi@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-photo-wrap">
+                    <img src="/media/roman.jpg" alt="Roman Grigoriadi" class="contact-photo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <ellipse cx="10" cy="14" rx="5" ry="3.5" fill="rgba(124,58,237,0.55)"/>
+                    <ellipse cx="5.5" cy="9.5" rx="2" ry="2.5" fill="rgba(124,58,237,0.45)"/>
+                    <ellipse cx="14.5" cy="9.5" rx="2" ry="2.5" fill="rgba(124,58,237,0.45)"/>
+                    <ellipse cx="7" cy="6" rx="1.8" ry="2.2" fill="rgba(6,182,212,0.5)"/>
+                    <ellipse cx="13" cy="6" rx="1.8" ry="2.2" fill="rgba(6,182,212,0.5)"/>
+                </svg>
+                <span>Purrsoft</span>
+            </div>
+            <p>&copy; 2026 Purrsoft. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
