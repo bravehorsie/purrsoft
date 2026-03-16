@@ -222,6 +222,13 @@ nav.nav-open .icon-hamburger { display: none;  }
     transition: background 0.4s ease;
 }
 
+#particles-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .hero-cat {
     position: absolute;
     right: 4%;
